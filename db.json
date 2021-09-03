@@ -1,0 +1,19 @@
+{
+  "lists": [
+    {
+      "text": "payday",
+      "price": "100",
+      "id": 1
+    },
+    {
+      "text": "book",
+      "price": "-20",
+      "id": 2
+    },
+    {
+      "text": "card debt",
+      "price": "-200",
+      "id": 3
+    }
+  ]
+}
