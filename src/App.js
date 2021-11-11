@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
-import ListItems from './components/ListItems';
-import AddList from './components/AddList';
-import TotalBalance from './components/TotalBalance';
-import IncExpBalance from './components/IncExpBalance';
+import { useState, useEffect } from "react";
+import ListItems from "./components/ListItems";
+import AddList from "./components/AddList";
+import TotalBalance from "./components/TotalBalance";
+import IncExpBalance from "./components/IncExpBalance";
+import "./App.css";
 
 function App() {
   const [list, setList] = useState([]);
@@ -16,23 +17,23 @@ function App() {
   }, []);
 
   const fetchLists = async () => {
-    const res = await fetch('http://localhost:5000/lists');
+    const res = await fetch("http://localhost:8000/lists");
     const data = await res.json();
 
     return data;
   };
 
   const deleteList = async (id) => {
-    await fetch(`http://localhost:5000/lists/${id}`, {
-      method: 'DELETE',
+    await fetch(`http://localhost:8000/lists/${id}`, {
+      method: "DELETE",
     });
     setList(list.filter((item) => item.id !== id));
   };
 
   const addList = async (newList) => {
-    const res = await fetch('http://localhost:5000/lists/', {
-      method: 'POST',
-      headers: { 'Content-type': 'application/json' },
+    const res = await fetch("http://localhost:8000/lists/", {
+      method: "POST",
+      headers: { "Content-type": "application/json" },
       body: JSON.stringify(newList),
     });
     const data = await res.json();
