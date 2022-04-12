@@ -1,23 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 export default function AddList({ addList }) {
-  const [text, setText] = useState('');
-  const [price, setPrice] = useState('');
+  const [text, setText] = useState("");
+  const [price, setPrice] = useState("");
 
   const onSubmit = (e) => {
     e.preventDefault();
 
-    if (!text) {
-      alert('Please, fill out the form!');
-      return;
+    if (text.length && price.length) {
+      addList({ text, price });
+      setText("");
+      setPrice("");
+    } else {
+      alert("Please fill out the form!");
     }
-
-    addList({ text, price });
-
-    setText('');
-    setPrice('');
   };
-
   return (
     <form onSubmit={onSubmit}>
       <input

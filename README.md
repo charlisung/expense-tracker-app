@@ -1,14 +1,36 @@
-# Income-Expense Tracker
+# Money Management 👛
 
-- Persist and fetch data with fake JSON server
-- Users can add and delete trasactions
-- Balance is updated on every transaction
+This is a CRUD money management app built with react. Users can track their income, expense and balance.
 
+Data is persistent by fake JSON api.
+
+## Lessons Learned
+
+- Fake json api
+- Running local json-server
+- Fetch request with method, headers, & body
+- JSON.stringify
+
+## Demo
+
+![money](money.gif)
+
+## Run Locally
+
+Install
+
+```bash
+  yarn
 ```
-# command line
-1) yarn server db.json
 
-2) yarn start
+Start server
+
+```bash
+  yarn server
 ```
 
-![demo](https://github.com/charlisung/expense-tracker-app/blob/main/Kapture%202021-09-03%20at%2014.58.18.gif)
+Start app
+
+```bash
+  yarn start
+```

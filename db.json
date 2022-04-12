@@ -2,23 +2,18 @@
   "lists": [
     {
       "text": "payday",
-      "price": "100",
+      "price": "200",
       "id": 1
     },
     {
-      "text": "book",
-      "price": "-20",
+      "text": "rent",
+      "price": "-150",
       "id": 2
     },
     {
-      "text": "card debt",
-      "price": "-200",
+      "text": "book",
+      "price": "-60",
       "id": 3
-    },
-    {
-      "text": "cash back",
-      "price": "50",
-      "id": 4
     }
   ]
 }

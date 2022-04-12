@@ -43,7 +43,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h2 className="title">Expense Tracker</h2>
+        <h2 className="title">Money Management</h2>
         <TotalBalance list={list} />
         <IncExpBalance list={list} />
         <ListItems list={list} deleteList={deleteList} />
